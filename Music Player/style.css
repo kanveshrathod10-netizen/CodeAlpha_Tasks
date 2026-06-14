@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff416c,#ff4b2b,#7f00ff);
+    padding:20px;
+}
+
+.player{
+    width:380px;
+    padding:25px;
+    border-radius:25px;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.2);
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+    color:white;
+    text-align:center;
+}
+
+.cover img{
+    width:220px;
+    height:220px;
+    border-radius:20px;
+    object-fit:cover;
+    box-shadow:0 0 25px rgba(255,255,255,.3);
+}
+
+.song-info{
+    margin-top:20px;
+}
+
+.song-info h3{
+    font-size:24px;
+}
+
+.song-info p{
+    opacity:0.8;
+}
+
+#progress{
+    width:100%;
+    margin:20px 0;
+    cursor:pointer;
+}
+
+.time{
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+}
+
+.controls{
+    margin-top:20px;
+}
+
+.controls button{
+    width:60px;
+    height:60px;
+    margin:0 8px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:22px;
+    color:white;
+    background:rgba(255,255,255,0.2);
+    transition:.3s;
+}
+
+.controls button:hover{
+    transform:scale(1.15);
+}
+
+#playBtn{
+    width:75px;
+    height:75px;
+    font-size:30px;
+    background:#00e5ff;
+    box-shadow:0 0 20px #00e5ff;
+}
+
+.volume{
+    margin-top:20px;
+}
+
+#volume{
+    width:100%;
+}
+
+#playlist{
+    margin-top:20px;
+    list-style:none;
+    max-height:150px;
+    overflow-y:auto;
+}
+
+#playlist li{
+    padding:10px;
+    margin:5px 0;
+    border-radius:10px;
+    background:rgba(255,255,255,.1);
+    cursor:pointer;
+    transition:.3s;
+}
+
+#playlist li:hover{
+    background:rgba(255,255,255,.25);
+}

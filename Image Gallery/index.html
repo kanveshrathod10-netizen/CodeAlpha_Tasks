@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anime Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Anime Image Gallery</h1>
+
+
+<div class="gallery">
+
+    <img src="images/images1.jpg" class="gallery-item" onclick="openLightbox(0)">
+<img src="images/images2.jpg" class="gallery-item" onclick="openLightbox(1)">
+<img src="images/images3.jpg" class="gallery-item" onclick="openLightbox(2)">
+<img src="images/images4.jpg" class="gallery-item" onclick="openLightbox(3)">
+<img src="images/images5.jpg" class="gallery-item" onclick="openLightbox(4)">
+<img src="images/images6.jpg" class="gallery-item" onclick="openLightbox(5)">
+<img src="images/images7.jpg" class="gallery-item" onclick="openLightbox(6)">
+<img src="images/images8.jpg" class="gallery-item" onclick="openLightbox(7)">
+<img src="images/images9.jpg" class="gallery-item" onclick="openLightbox(8)">
+<img src="images/images10.jpg" class="gallery-item" onclick="openLightbox(9)">
+<img src="images/images11.jpg" class="gallery-item" onclick="openLightbox(10)">
+<img src="images/images12.jpg" class="gallery-item" onclick="openLightbox(11)">
+
+</div>
+
+<div id="lightbox">
+
+    <span class="close" onclick="closeLightbox()">&times;</span>
+
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+
+    <img id="lightbox-img">
+
+    <button class="next" onclick="changeImage(1)">❯</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
